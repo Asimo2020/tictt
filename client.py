@@ -20,7 +20,7 @@ def receive_message(self):
             if message == "Game started!":
                 print("Game started!")
             elif message.startswith("[["):
-                # Update the board
+                # Update the board game
                 self.board = eval(message)
                 self.render_board()
             elif message.startswith("Player"):
@@ -64,6 +64,6 @@ def start(self):
 
         # Make moves
         self.make_move()
-
+#tictactoeclient
 client = TicTacToeClient()
 client.start()

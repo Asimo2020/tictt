@@ -95,6 +95,6 @@ class TicTacToeServer:
             print(f"New connection from {address}")
             player_thread = threading.Thread(target=self.handle_client, args=(player_socket,))
             player_thread.start()
-
+# Start server tictactoe
 server = TicTacToeServer()
 server.start()
